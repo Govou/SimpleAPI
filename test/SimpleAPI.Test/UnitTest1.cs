@@ -14,7 +14,7 @@ namespace SimpleAPI.Test
         {
             var returnValue = controller.Get().ToList();
             Assert.NotNull(returnValue);
-           // Assert.DoesNotContain("Freezing", returnValue[0].Summary);
+            Assert.DoesNotContain("Freezing", returnValue[0].Summary);
         }
 
         [Fact]
