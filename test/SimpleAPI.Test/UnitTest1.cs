@@ -13,8 +13,8 @@ namespace SimpleAPI.Test
         public void GetReturnsValues()
         {
             var returnValue = controller.Get().ToList();
-            Assert.NotNull(returnValue);
-            Assert.DoesNotContain("Freezing", returnValue[0].Summary);
+         //   Assert.NotNull(returnValue);
+            Assert.Contains("Freezing", returnValue[0].Summary);
         }
 
         [Fact]
